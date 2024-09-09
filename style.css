@@ -1,0 +1,77 @@
+/* Print Formatting */
+
+.stamp-area1 {
+  width: 100%;
+  height: 450px;
+}
+
+.stamp-area2 {
+  width: 100%;
+  height: 750px;
+}
+
+.body {
+  text-align: justify;
+}
+
+h2,
+h3 {
+  text-align: center;
+  line-height: 2;
+  font-size: 19px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16.5px;
+  text-wrap: wrap;
+}
+
+li {
+  font-weight: bold;
+}
+
+
+.form-footer {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#printSection {
+  visibility: hidden;
+  width: 768px;
+  margin: auto;
+}
+
+.firstPage {
+  margin-top: 8em;
+}
+
+/* Set up the page size for printing */
+@media print {
+  @page {
+    size: A4; /* Specify A4 paper size */
+    margin: 25mm; /* Adjust the margin as needed */
+  }
+
+  /* Optional: Style the content to fit A4 size */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Make sure only the print section is visible */
+  body * {
+    visibility: hidden;
+  }
+
+  #printSection,
+  #printSection * {
+    visibility: visible;
+  }
+
+
+}
