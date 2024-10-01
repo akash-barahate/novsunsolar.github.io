@@ -35,6 +35,7 @@ let solarCapacity1 = document.getElementById("solarCapacity1");
 
 let witness11 = document.getElementById("witness11");
 let witness22 = document.getElementById("witness22");
+let witness111 = document.getElementById("witness111");
 
 
 function printContent() {
@@ -56,6 +57,7 @@ function printContent() {
 
   witness11.innerText = witness1.value;
   witness22.innerText = witness2.value;
+  witness111.innerText = witness1.value;
 
   printSection.classList.toggle("visible");
   
