@@ -31,7 +31,12 @@
 
 /* print format */
 
+.visible {
+  display: none;
+}
+
 #printSection {
+  visibility: hidden;
   width: 768px;
   margin: auto;
 }
