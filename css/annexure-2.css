@@ -1,39 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 
-/* Set up the page size for printing */
-@media print {
-  @page {
-    size: A4; /* Specify A4 paper size */
-    margin: 20mm; /* Adjust the margin as needed */
-  }
-
-  /* Optional: Style the content to fit A4 size */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Make sure only the print section is visible */
-  body * {
-    visibility: hidden;
-  }
-  #printSection,
-  #printSection * {
-    visibility: visible;
-  }
-  #printSection {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
 /* print format */
-
-.visible {
-  display: none;
-}
 
 #printSection {
   visibility: hidden;
@@ -137,4 +104,37 @@ p {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.visible {
+  display: none;
+}
+
+/* Set up the page size for printing */
+@media print {
+  @page {
+    size: A4; /* Specify A4 paper size */
+    margin: 20mm; /* Adjust the margin as needed */
+  }
+
+  /* Optional: Style the content to fit A4 size */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Make sure only the print section is visible */
+  body * {
+    visibility: hidden;
+  }
+  #printSection,
+  #printSection * {
+    visibility: visible;
+  }
+  #printSection {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

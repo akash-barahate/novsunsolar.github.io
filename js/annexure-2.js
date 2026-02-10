@@ -19,6 +19,6 @@ function printContent() {
   consumerAddress1.innerText = consumerAddress.value;
   consumerAddress2.innerText = consumerAddress.value;
   dateOn1.innerText = dateOn.value;
-
+  printSection.classList.toggle("visible");
   window.print();
 }
